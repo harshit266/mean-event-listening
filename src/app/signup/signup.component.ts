@@ -17,7 +17,7 @@ export class SignupComponent implements OnInit {
   addAdmin(form) {
     // console.log("-------",form.controls.email._parent.status)
     console.log("---------------------")
-    
+    // console.log(form.value.myInput.$valid)
    this.SignupService.addAdmin(form.value)
    .subscribe(
     data => {
@@ -25,6 +25,10 @@ export class SignupComponent implements OnInit {
             alert(data['msg'])
             this.router.navigate([`login`]);
     
+            }
+            else if (data['code']==400){
+              alert(data['msg'])
+              this.router.navigate(['signup']);
             }
             else{
             alert("data not saved")

@@ -49,6 +49,15 @@ loginController.addAdmin = (req, res) => {
     u.email = req.body.email
     u.password=req.body.password
 
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(req.body.email) == false) 
+        {
+            res.status(200).send({
+                msg : "Email Address Is not valid",
+                code:400
+            })
+        }
+
     u.save((err, result) => {
         if (err) {
             console.log("--", err)
