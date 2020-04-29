@@ -20,6 +20,7 @@ eventController.addEvent = (req, res) => {
         }
     });
 }
+
 eventController.viewEvent = (req, res) => {
 
     

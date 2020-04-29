@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { EventFormComponent } from './event-form/event-form.component';
 import { EventViewComponent } from './event-view/event-view.component';
+import { SignupComponent } from './signup/signup.component';
 // import { PersistenceModule } from 'angular-persistence';
 
 @NgModule({
@@ -15,7 +16,8 @@ import { EventViewComponent } from './event-view/event-view.component';
     AppComponent,
     LoginComponent,
     EventFormComponent,
-    EventViewComponent
+    EventViewComponent,
+    SignupComponent
 
   ],
   imports: [

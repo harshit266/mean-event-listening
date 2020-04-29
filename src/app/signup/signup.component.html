@@ -1,0 +1,22 @@
+<div class="event container center_div">
+    <h3 class="inner-tittle t-inner">Events</h3>
+        <form #form="ngForm" (ngSubmit)="addAdmin(form)">
+            Enter Email :
+            <input ngModel name="email"  #email="ngModel" type="email" class="text form-control">
+            <br>
+            
+            Enter Name :
+            <input ngModel name="name"  #name="ngModel" type="text" class="number form-control">
+            <br>
+            Enter Password :
+            <input ngModel name="password"  #password="ngModel" type="password" class="text form-control">
+            <br>
+            
+            <button class="form-control">Submit</button>
+            
+             <!-- <div class="submit form-control"><input type="submit"  value="Submit"></div> -->
+             <br>
+          </form>
+          
+
+</div>

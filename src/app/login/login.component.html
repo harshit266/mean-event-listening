@@ -7,6 +7,11 @@
             <br>
             Enter Password :                        
             <input  ngModel name="password" #password="ngModel" class="form-control" type="password"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
-             <div class="submit"><input type="submit"  value="Sign in" ></div>
-          </form>
+           <br>
+            <button class="form-control">Signin</button>
+             <br>
+            <!-- <div class="submit form-control"><input type="submit"  value="Sign in" ></div> -->
+             <button class="form-control" routerLink="/signup">Signup</button>
+          
+            </form>
 </div>
