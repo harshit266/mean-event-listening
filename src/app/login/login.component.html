@@ -1,0 +1,12 @@
+<div class="login container center_div" >
+    <h3 class="inner-tittle t-inner">Admin Login</h3>
+        <form #form="ngForm" (ngSubmit)="checkAdminCredentials(form)">
+            Enter Email :
+            <input ngModel name="email"  #email="ngModel" type="text" class="text form-control" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" >
+            <br>
+            <br>
+            Enter Password :                        
+            <input  ngModel name="password" #password="ngModel" class="form-control" type="password"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+             <div class="submit"><input type="submit"  value="Sign in" ></div>
+          </form>
+</div>

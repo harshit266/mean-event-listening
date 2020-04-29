@@ -1,0 +1,23 @@
+<div class="card-body">
+    <div class="table-responsive">
+    <table class="table table-striped">
+    <thead>
+    <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Event</th>
+    <th>Event Type</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of user">
+            <td>{{ user.name }}</td>
+            <td>{{ user.age }}</td>
+            <td>{{user.event}}</td>
+            <td>{{user.event_type}}</td>
+            
+        </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>

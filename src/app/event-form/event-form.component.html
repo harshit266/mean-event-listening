@@ -1,0 +1,25 @@
+<div class="event container center_div">
+    <h3 class="inner-tittle t-inner">Events</h3>
+        <form #form="ngForm" (ngSubmit)="addEvent(form)">
+            Enter Name :
+            <input ngModel name="name"  #name="ngModel" type="text" class="text form-control">
+            <br>
+            
+            Enter Age :
+            <input ngModel name="age"  #age="ngModel" type="number" class="number form-control">
+            <br>
+            Enter Event Name :
+            <input ngModel name="event"  #event="ngModel" type="text" class="text form-control">
+            <br>
+            Enter Event type :
+            <input ngModel name="type"  #type="ngModel" type="text" class="text form-control">
+            <br>
+            
+            
+            
+             <div class="submit"><input type="submit"  value="Submit" ></div>
+             <br>
+          </form>
+          <button (click)="view();" >View</button>
+
+</div>
